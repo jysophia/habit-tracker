@@ -7,22 +7,23 @@ import UserProfile from './pages/userProfile';
 import HabitStart from './pages/habitStart';
 import HabitSet from './pages/habitSet';
 import HabitProgress from './pages/habitProgress';
-import HabitList from './pages/habitList';
+// import HabitList from './pages/habitList';
 
 function App() {
   return (
     <div className="App">
+      <LandingPage />
       <header className="App-header">
         <React.Fragment>
           <CssBaseline />
             <BrowserRouter>
               <Routes>
-                <Route path="/" element={<LandingPage />}></Route>
+                {/* <Route path="/" element={<LandingPage />} className="landingPage-css"></Route> */}
                 <Route path="/userProfile" element={<UserProfile />}></Route>
                 <Route path="/habitStart" element={<HabitStart />}></Route>
                 <Route path="/habitSet" element={<HabitSet />}></Route>
                 <Route path="/habitProgress" element={<HabitProgress />}></Route>
-                <Route path="/habitList" element={<HabitList />}></Route>
+                {/* <Route path="/habitList" element={<HabitList />}></Route> */}
               </Routes>
             </BrowserRouter>
         </React.Fragment>

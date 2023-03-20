@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 822px;
+    height: 469px;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+}
+
+.habit {
+    position: relative;
+    background: #D9D9D9;
+    border-radius: 26px;
+}
+
+.navBar {
+    position: absolute;
+    width: 1020px;
+    height: 77px;
+    background-color: #BECCFF;
+    top: 0%
+}
