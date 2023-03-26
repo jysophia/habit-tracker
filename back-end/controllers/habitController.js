@@ -1,10 +1,13 @@
 const asyncHandler = require('express-async-handler')
 
+const Habit = require('../models/habitModel')
+
 // @desc Get habits
 // @route GET /api/habits
 // @access Private
 const getHabits = asyncHandler(async (req, res) => {
-    res.status(200).json({ message: 'Get habits'})
+  const habits = await Habit.find()
+    res.status(200).json(habits)
 })
 
 // @desc Set habit
